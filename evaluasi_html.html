@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evaluasi HTML Dasar</title>
+</head>
+<body>
+
+    <h1>Selamat Datang di Evaluasi HTML</h1>
+    <p>Halaman ini dibuat untuk mengevaluasi pemahaman dasar tentang struktur dan elemen-elemen HTML.</p>
+
+    <h2>Pengelolaan Teks</h2>
+    <p>
+        Ini adalah sebuah paragraf yang berisi teks dengan beberapa bagian yang <strong>tebal</strong> dan 
+        <em>miring</em>. Paragraf ini berisi 4 kalimat yang didalamnya ada <em>kata miring</em> dan <strong>kata tebal.</strong> Jika ada <strong>kata tebal</strong> maka ada <em>kata miring.</em> Karena paragraf ini dibuat dengan tag <em>em</em> dan <strong>strong.</strong>
+    </p>
+    <hr>
+    <blockquote>
+        "Keunggulan bukanlah suatu tindakan, melainkan kebiasaan." - Aristoteles
+    </blockquote>
+
+    <h2>Hyperlink dan Gambar</h2>
+    <p>Kunjungi <a href="https://www.tokopedia.com">situs favorit saya</a>.</p>
+    <p>
+        <a href="https://www.tokopedia.com/">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1C-E1Wv6jDCQG20pWSaVXCdCDBxFRkaK6CQ&s" alt="Tokopedia">
+        </a>
+    </p>
+
+    <h2>Membuat Daftar</h2>
+    <h3>Hal yang Ingin Dicapai</h3>
+    <ol>
+        <li>Saya ingin masuk ke PTN impian.</li>
+        <li>Membahagiakan orang tua.</li>
+        <li>Sukses Dunia Akhirat.</li>
+    </ol>
+    <h3>Hobi atau Aktivitas</h3>
+    <ul>
+        <li>Membaca buku.</li>
+        <li>Bermain.</li>
+        <li>Balap Karung.</li>
+    </ul>
+
+    <h2>Tabel Data</h2>
+    <table border="1">
+        <tr>
+            <th>Nama</th>
+            <th>Umur</th>
+            <th>Kota</th>
+        </tr>
+        <tr>
+            <td>Supriyadi</td>
+            <td>33</td>
+            <td>Sumedang</td>
+        </tr>
+        <tr>
+            <td>Suharjo</td>
+            <td>25</td>
+            <td>Bandung</td>
+        </tr>
+        <tr>
+            <td>Abraham</td>
+            <td>28</td>
+            <td>Bandung</td>
+        </tr>
+    </table>
+
+    <h2>Formulir Pendaftaran</h2>
+    <form action="#" method="post">
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" id="Laki-laki" name="jenis_kelamin" value="Laki-laki">
+        <label for="Laki-laki">Laki-laki</label><br>
+        <input type="radio" id="Perempuan" name="jenis_kelamin" value="Perempuan">
+        <label for="Perempuan">Perempuan</label><br><br>
+
+        <label for="kota">Kota Tempat Tinggal:</label><br>
+        <select id="kota" name="kota">
+            <option value="Sumedang">Sumedang</option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Bandung">Bandung</option>
+        </select><br><br>
+
+        <input type="checkbox" id="syarat" name="syarat" required>
+        <label for="syarat">Saya menyetujui syarat dan ketentuan</label><br><br>
+
+        <label for="pesan">Pesan atau Komentar:</label><br>
+        <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
