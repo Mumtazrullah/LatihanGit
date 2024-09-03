@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+}
+
+header nav h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.menu-icon span {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.upcoming-launch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.launch-info {
+    text-align: left;
+    margin-right: 50px;
+}
+
+.launch-info h2 {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.launch-info h1 {
+    font-size: 36px;
+    margin: 0 0 20px 0;
+    color: #fff;
+}
+
+.launch-info button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.launch-info button:hover {
+    background-color: #333;
+    border-color: #ccc;
+}
+
+.book-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-images img {
+    max-height: 300px;
+    width: auto;
+    transition: transform 0.5s;
+}
+
+.book-images img:nth-child(1) {
+    transform: scale(0.5);
+    margin: 0 -20px;
+    animation: rotate1 9s infinite;
+}
+
+.book-images img:nth-child(2) {
+    transform: scale(1);
+    margin: 0 -20px;
+    animation: rotate2 9s infinite;
+}
+
+.book-images img:nth-child(3) {
+    transform: scale(0.5);
+    margin: 0 -20px;
+    animation: rotate3 9s infinite;
+}
+
+@keyframes rotate1 {
+    0%, 100% {
+        transform: scale(0.5);
+    }
+    33% {
+        transform: scale(1);
+    }
+    66% {
+        transform: scale(0.5);
+    }
+}
+
+@keyframes rotate2 {
+    0%, 100% {
+        transform: scale(1);
+    }
+    33% {
+        transform: scale(0.5);
+    }
+    66% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate3 {
+    0%, 100% {
+        transform: scale(0.5);
+    }
+    33% {
+        transform: scale(0.5);
+    }
+    66% {
+        transform: scale(1);
+    }
+}
