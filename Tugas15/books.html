@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - MyLibrary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>MyLibrary</h1>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span>&#9776;</span>
+            </div>
+        </nav>
+    </header>
+
+    <div id="side-nav" class="side-nav">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+    <section class="books-section">
+        <div class="books-info">
+            <h2>Books Collection</h2>
+            <div class="book-grid">
+                <!-- Buku 1 -->
+                <div class="book-item">
+                    <img src="gasby.jpeg" alt="The Great Gatsby">
+                    <h3>The Great Gatsby</h3>
+                    <p class="status available">Available</p>
+                </div>
+                <!-- Buku 2 -->
+                <div class="book-item">
+                    <img src="1984.jpg" alt="1984">
+                    <h3>1984</h3>
+                    <p class="status available">Available</p>
+                </div>
+                <!-- Buku 3 -->
+                <div class="book-item">
+                    <img src="mockingbird.jpg" alt="To Kill a Mockingbird">
+                    <h3>To Kill a Mockingbird</h3>
+                    <p class="status borrowed">Not Available</p>
+                </div>
+                <!-- Buku 4 -->
+                <div class="book-item">
+                    <img src="catcher.jpg" alt="The Catcher in the Rye">
+                    <h3>The Catcher in the Rye</h3>
+                    <p class="status available">Available</p>
+                </div>
+                <!-- Buku 5 -->
+                <div class="book-item">
+                    <img src="mobydick.jpeg" alt="Moby Dick">
+                    <h3>Moby Dick</h3>
+                    <p class="status borrowed">Not Available</p>
+                </div>
+                <!-- Buku 6 -->
+                <div class="book-item">
+                    <img src="naomi.jpg" alt="naomi">
+                    <h3>Naomi</h3>
+                    <p class="status borrowed">Not Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

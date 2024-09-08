@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - MyLibrary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>MyLibrary</h1>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span>&#9776;</span>
+            </div>
+        </nav>
+    </header>
+
+    <div id="side-nav" class="side-nav">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+    <section class="upcoming-launch">
+        <div class="launch-info">
+            <h2>UPCOMING LAUNCH</h2>
+            <h1>ANIMAL FARM</h1>
+            <button onclick="showDetails()">SHOW</button>
+        </div>
+        <div class="book-images">
+            <img src="animalfarm.png" alt="Animal Farm 1">
+            <img src="animalfarm.png" alt="Animal Farm 2">
+            <img src="animalfarm.png" alt="Animal Farm 3">
+        </div>
+    </section>
+
+    <!-- Konten detail yang disembunyikan awalnya -->
+    <section class="book-details" id="book-details" style="display: none;">
+        <h2>Book Details</h2>
+        <p><strong>Title:</strong> Animal Farm</p>
+        <p><strong>Author:</strong> George Orwell</p>
+        <p><strong>Description:</strong> A satirical allegory of Soviet totalitarianism, Animal Farm tells the story of a group of farm animals who rebel against their human farmer, hoping to create a society where animals can be free, equal, and happy. However, the rebellion is betrayed, and the farm ends up in a state as bad as it was before, under the dictatorship of a pig named Napoleon.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
